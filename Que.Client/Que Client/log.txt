@@ -1,0 +1,42 @@
+---- Q Client started 2012-10-3----
+Working dir: Z:\Projekter\que\Que.Client\Que Client
+Hide cursor: 1
+Fullscreen: 0
+Requesting /Playlists
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /Search/te
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue
+Requesting /NowPlaying
+Requesting /Queue

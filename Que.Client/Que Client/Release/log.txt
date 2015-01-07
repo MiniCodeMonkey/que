@@ -1,0 +1,4 @@
+---- Q Client started 2012-10-3----
+Working dir: Z:\Projekter\que\Que.Client\Que Client\Release
+Hide cursor: 0
+Fullscreen: 0

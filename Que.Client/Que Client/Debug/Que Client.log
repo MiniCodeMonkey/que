@@ -1,0 +1,122 @@
+﻿Build started 10/2/2012 11:23:35 PM.
+Project "Z:\Projekter\que\Que.Client\Que Client\Que Client.vcxproj" on node 2 (build target(s)).
+InitializeBuildStatus:
+  Touching "Debug\Que Client.unsuccessfulbuild".
+ClCompile:
+  All outputs are up-to-date.
+ManifestResourceCompile:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Que Client.exe.embed.manifest.res" "Debug\Que Client_manifest.rc" 
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\Projekter\que\Que.Client\Que Client\Debug\Que Client.exe" /INCREMENTAL /NOLOGO "sfml-main.lib" "sfml-system.lib" "sfml-window.lib" "sfml-graphics.lib" "sfml-network.lib" ticpp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Que Client.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Z:\Projekter\que\Que.Client\Que Client\Debug\Que Client.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\Projekter\que\Que.Client\Que Client\Debug\Que Client.lib" /MACHINE:X86 "Debug\Que Client.exe.embed.manifest.res"
+  Debug\AlbumCoverCacheManager.obj
+  Debug\AlbumCoverDownloadThread.obj
+  Debug\Cache.obj
+  Debug\Config.obj
+  Debug\Log.obj
+  Debug\main.obj
+  Debug\NowPlaying.obj
+  Debug\Parser.obj
+  Debug\Playlist.obj
+  Debug\Playlists.obj
+  Debug\RectangleShape.obj
+  Debug\Screen.obj
+  Debug\Screen_Browse.obj
+  Debug\Screen_Error.obj
+  Debug\Screen_Loading.obj
+  Debug\Screen_Main.obj
+  Debug\Track.obj
+ticpp.lib(tinyxml.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in AlbumCoverCacheManager.obj
+ticpp.lib(ticpp.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in AlbumCoverCacheManager.obj
+ticpp.lib(tinyxmlparser.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in AlbumCoverCacheManager.obj
+ticpp.lib(tinyxmlerror.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in AlbumCoverCacheManager.obj
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool)" (?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: __int64 __thiscall std::ios_base::width(__int64)" (?width@ios_base@std@@QAE_J_J@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputn(char const *,__int64)" (?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char)" (?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: class std::basic_streambuf<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::rdbuf(void)const " (?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: char __thiscall std::basic_ios<char,struct std::char_traits<char> >::fill(void)const " (?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: int __thiscall std::ios_base::flags(void)const " (?flags@ios_base@std@@QBEHXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: __int64 __thiscall std::ios_base::width(void)const " (?width@ios_base@std@@QBE_JXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::flush(void)" (?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::tie(void)const " (?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: bool __thiscall std::ios_base::good(void)const " (?good@ios_base@std@@QBE_NXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: void __thiscall std::basic_ostream<char,struct std::char_traits<char> >::_Osfx(void)" (?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: virtual __thiscall std::basic_ios<char,struct std::char_traits<char> >::~basic_ios<char,struct std::char_traits<char> >(void)" (??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: virtual __thiscall std::basic_ostream<char,struct std::char_traits<char> >::~basic_ostream<char,struct std::char_traits<char> >(void)" (??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UAE@XZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: __thiscall std::basic_ostream<char,struct std::char_traits<char> >::basic_ostream<char,struct std::char_traits<char> >(class std::basic_streambuf<char,struct std::char_traits<char> > *,bool)" (??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: __thiscall std::basic_ios<char,struct std::char_traits<char> >::basic_ios<char,struct std::char_traits<char> >(void)" (??0?$basic_ios@DU?$char_traits@D@std@@@std@@IAE@XZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::clear(int,bool)" (?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: virtual __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::~basic_streambuf<char,struct std::char_traits<char> >(void)" (??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAE@XZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Pninc(void)" (?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::epptr(void)const " (?epptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::pptr(void)const " (?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::eback(void)const " (?eback@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::gptr(void)const " (?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::egptr(void)const " (?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Gninc(void)" (?_Gninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::basic_streambuf<char,struct std::char_traits<char> >(void)" (??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAE@XZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: class std::locale::facet * __thiscall std::locale::facet::_Decref(void)" (?_Decref@facet@locale@std@@QAEPAV123@XZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Init(void)" (?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::setg(char *,char *,char *)" (?setg@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXPAD00@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: void __thiscall std::locale::facet::_Incref(void)" (?_Incref@facet@locale@std@@QAEXXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: __thiscall std::locale::id::operator unsigned int(void)" (??Bid@locale@std@@QAEIXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator<<(int)" (??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::setp(char *,char *)" (?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXPAD0@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::setp(char *,char *,char *)" (?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXPAD00@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::pbase(void)const " (?pbase@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::gbump(int)" (?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXH@Z) already defined in ticpp.lib(tinyxml.obj)
+msvcprtd.lib(MSVCP100D.dll) : error LNK2005: "protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::pbump(int)" (?pbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXH@Z) already defined in ticpp.lib(tinyxml.obj)
+libcpmt.lib(locale0.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in AlbumCoverCacheManager.obj
+libcpmt.lib(locale0.obj) : error LNK2005: "private: static void __cdecl std::locale::facet::_Facet_Register(class std::locale::facet *)" (?_Facet_Register@facet@locale@std@@CAXPAV123@@Z) already defined in msvcprtd.lib(locale0_implib.obj)
+libcpmt.lib(locale0.obj) : error LNK2005: "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ) already defined in msvcprtd.lib(MSVCP100D.dll)
+libcpmt.lib(locale0.obj) : error LNK2005: "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z) already defined in msvcprtd.lib(MSVCP100D.dll)
+libcpmt.lib(locale0.obj) : error LNK2005: "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z) already defined in msvcprtd.lib(MSVCP100D.dll)
+libcpmt.lib(locale0.obj) : error LNK2005: "private: static class std::locale::_Locimp * __cdecl std::locale::_Init(void)" (?_Init@locale@std@@CAPAV_Locimp@12@XZ) already defined in msvcprtd.lib(MSVCP100D.dll)
+libcpmt.lib(ios.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in AlbumCoverCacheManager.obj
+libcpmt.lib(ios.obj) : error LNK2005: "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z) already defined in msvcprtd.lib(MSVCP100D.dll)
+libcpmt.lib(ios.obj) : error LNK2005: "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z) already defined in msvcprtd.lib(MSVCP100D.dll)
+libcpmt.lib(iosptrs.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in AlbumCoverCacheManager.obj
+libcpmt.lib(xlock.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in AlbumCoverCacheManager.obj
+libcpmt.lib(xlock.obj) : error LNK2005: "public: __thiscall std::_Lockit::_Lockit(int)" (??0_Lockit@std@@QAE@H@Z) already defined in msvcprtd.lib(MSVCP100D.dll)
+libcpmt.lib(xlock.obj) : error LNK2005: "public: __thiscall std::_Lockit::~_Lockit(void)" (??1_Lockit@std@@QAE@XZ) already defined in msvcprtd.lib(MSVCP100D.dll)
+LIBCMT.lib(setlocal.obj) : error LNK2005: __configthreadlocale already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(invarg.obj) : error LNK2005: __invoke_watson already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(invarg.obj) : error LNK2005: __invalid_parameter already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(lconv.obj) : error LNK2005: _localeconv already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(crt0dat.obj) : error LNK2005: __initterm_e already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(crt0dat.obj) : error LNK2005: _exit already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(crt0dat.obj) : error LNK2005: __exit already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(crt0dat.obj) : error LNK2005: __cexit already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(crt0dat.obj) : error LNK2005: __amsg_exit already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(mlock.obj) : error LNK2005: __unlock already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(mlock.obj) : error LNK2005: __lock already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(winxfltr.obj) : error LNK2005: __XcptFilter already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(atox.obj) : error LNK2005: _atoi already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(hooks.obj) : error LNK2005: "void __cdecl terminate(void)" (?terminate@@YAXXZ) already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(crt0init.obj) : error LNK2005: ___xi_a already defined in MSVCRT.lib(cinitexe.obj)
+LIBCMT.lib(crt0init.obj) : error LNK2005: ___xi_z already defined in MSVCRT.lib(cinitexe.obj)
+LIBCMT.lib(crt0init.obj) : error LNK2005: ___xc_a already defined in MSVCRT.lib(cinitexe.obj)
+LIBCMT.lib(crt0init.obj) : error LNK2005: ___xc_z already defined in MSVCRT.lib(cinitexe.obj)
+LIBCMT.lib(crt0.obj) : error LNK2005: _mainCRTStartup already defined in MSVCRT.lib(crtexe.obj)
+LIBCMT.lib(errmode.obj) : error LNK2005: ___set_app_type already defined in MSVCRT.lib(MSVCR100.dll)
+LIBCMT.lib(tolower.obj) : error LNK2005: _tolower already defined in MSVCRT.lib(MSVCR100.dll)
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+main.obj : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+Parser.obj : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+Screen_Browse.obj : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+Screen_Main.obj : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+AlbumCoverCacheManager.obj : error LNK2019: unresolved external symbol __imp___CrtDbgReportW referenced in function "public: bool __thiscall std::_Tree_const_iterator<class std::_Tree_val<class std::_Tmap_traits<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class CacheItem *,struct std::less<class std::basic_string<char,struct std::char_traits<char>,classstd::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class CacheItem *> >,0> > >::operator==(class std::_Tree_const_iterator<class std::_Tree_val<class std::_Tmap_traits<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class CacheItem *,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class CacheItem *> >,0> > > const &)const " (??8?$_Tree_const_iterator@V?$_Tree_val@V?$_Tmap_traits@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAVCacheItem@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAVCacheItem@@@std@@@2@$0A@@std@@@std@@@std@@QBE_NABV01@@Z)
+AlbumCoverDownloadThread.obj : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+Cache.obj : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+Config.obj : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+Screen_Browse.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::RoundedRectangleShape::~RoundedRectangleShape(void)" (__imp_??1RoundedRectangleShape@sf@@UAE@XZ) referenced in function "public: virtual int __thiscall Screen_Browse::Run(class sf::RenderWindow &)" (?Run@Screen_Browse@@UAEHAAVRenderWindow@sf@@@Z)
+Screen_Browse.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RoundedRectangleShape::setCornersRadius(float)" (__imp_?setCornersRadius@RoundedRectangleShape@sf@@QAEXM@Z) referenced in function "public: virtual int __thiscall Screen_Browse::Run(class sf::RenderWindow &)" (?Run@Screen_Browse@@UAEHAAVRenderWindow@sf@@@Z)
+Screen_Browse.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RoundedRectangleShape::setSize(class sf::Vector2<float> const &)" (__imp_?setSize@RoundedRectangleShape@sf@@QAEXABV?$Vector2@M@2@@Z) referenced in function "public: virtual int __thiscall Screen_Browse::Run(class sf::RenderWindow &)" (?Run@Screen_Browse@@UAEHAAVRenderWindow@sf@@@Z)
+Screen_Browse.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::RoundedRectangleShape::RoundedRectangleShape(class sf::Vector2<float> const &,float,unsigned int)" (__imp_??0RoundedRectangleShape@sf@@QAE@ABV?$Vector2@M@1@MI@Z) referenced in function "public: virtual int __thiscall Screen_Browse::Run(class sf::RenderWindow &)" (?Run@Screen_Browse@@UAEHAAVRenderWindow@sf@@@Z)
+Z:\Projekter\que\Que.Client\Que Client\Debug\Que Client.exe : fatal error LNK1120: 5 unresolved externals
+Done Building Project "Z:\Projekter\que\Que.Client\Que Client\Que Client.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.24

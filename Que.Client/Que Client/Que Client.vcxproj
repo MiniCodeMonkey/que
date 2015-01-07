@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CE08552F-9E2A-447B-907B-5EEC53A9F365}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>QueClient</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\SFML-2.0-rc\include;C:\ticpp;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SFML-2.0-rc\lib;C:\ticpp\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\SFML-2.0-rc\include;C:\ticpp;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SFML-2.0-rc\lib;C:\ticpp\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;SFML_DYNAMIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-main.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-network.lib;ticpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;SFML_DYNAMIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-main.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-network.lib;ticpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="arrow_left.png" />
+    <None Include="arrow_right.png" />
+    <None Include="coolvetica.ttf" />
+    <None Include="Delicious-Roman.otf">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="GeosansLight.ttf" />
+    <None Include="LaoSangamMN.ttf">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="loading_bottom.png">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="searchfield_background.png">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="searchfield_clear.png">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="SegoeWP-Light.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AlbumCoverCacheManager.cpp" />
+    <ClCompile Include="src\AlbumCoverDownloadThread.cpp" />
+    <ClCompile Include="src\Cache.cpp" />
+    <ClCompile Include="src\Config.cpp" />
+    <ClCompile Include="src\Log.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\NowPlaying.cpp" />
+    <ClCompile Include="src\Parser.cpp" />
+    <ClCompile Include="src\Playlist.cpp" />
+    <ClCompile Include="src\Playlists.cpp" />
+    <ClCompile Include="src\RectangleShape.cpp" />
+    <ClCompile Include="src\RoundedRectangleShape.cpp" />
+    <ClCompile Include="src\Screen.cpp" />
+    <ClCompile Include="src\Screen_Browse.cpp" />
+    <ClCompile Include="src\Screen_Error.cpp" />
+    <ClCompile Include="src\Screen_Loading.cpp" />
+    <ClCompile Include="src\Screen_Main.cpp" />
+    <ClCompile Include="src\Track.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AlbumCoverCacheManager.h" />
+    <ClInclude Include="src\AlbumCoverDownloadThread.h" />
+    <ClInclude Include="src\Cache.h" />
+    <ClInclude Include="src\CacheItem.h" />
+    <ClInclude Include="src\Config.h" />
+    <ClInclude Include="src\Defines.h" />
+    <ClInclude Include="src\Log.h" />
+    <ClInclude Include="src\NowPlaying.h" />
+    <ClInclude Include="src\Parser.h" />
+    <ClInclude Include="src\Playlist.h" />
+    <ClInclude Include="src\Playlists.h" />
+    <ClInclude Include="src\QueException.h" />
+    <ClInclude Include="src\RectangleShape.h" />
+    <ClInclude Include="src\RoundedRectangleShape.hpp" />
+    <ClInclude Include="src\Screen.h" />
+    <ClInclude Include="src\Screen_Browse.h" />
+    <ClInclude Include="src\Screen_Error.h" />
+    <ClInclude Include="src\Screen_Loading.h" />
+    <ClInclude Include="src\Screen_Main.h" />
+    <ClInclude Include="src\Track.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
